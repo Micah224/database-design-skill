@@ -1,0 +1,15 @@
+---
+description: Evidence-based database requirements discovery and stack recommendation — use before designing any schema, choosing a database, or modelling users/roles/permissions/tenants/staff/admins/audit/consent.
+globs: ["**/*.sql", "**/migrations/**", "**/prisma/**", "**/drizzle/**", "**/schema.*", "**/models/**"]
+alwaysApply: false
+---
+
+This repository ships an Agent Skill at `skills/database-design-discovery/SKILL.md`. Read it and follow its workflow whenever the task involves designing or reviewing a database schema, choosing a database engine, or modelling users, roles, permissions, multi-tenancy, staff, departments, branches, administrators, audit logging or consent.
+
+Scripts (plain Node.js, no dependencies):
+
+- `node skills/database-design-discovery/scripts/questions.js --section A` — list discovery questions (branches open as answers are recorded)
+- `node skills/database-design-discovery/scripts/check-answers.js answers.json` — validate completeness
+- `node skills/database-design-discovery/scripts/recommend.js answers.json --out design-brief.md` — cited recommendation, conflict check, schema checklist
+
+Design from `skills/database-design-discovery/assets/reference-schema.sql` via `references/schema-guide.md`. Every recommendation in a deliverable must carry a source.
