@@ -1,6 +1,11 @@
 ---
-name: "database-design-discovery"
-description: "Evidence-based database requirements discovery before any schema: 50+ branching questions across users, staff/departments/branches, admins and super-admin, then a cited stack recommendation, contradiction check and tested PostgreSQL schema. Use for any database, schema, data-model, RBAC, multi-tenancy, audit or consent design."
+name: database-design-discovery
+description: Run a structured, evidence-based requirements discovery BEFORE designing a database — 50+ branching questions across the whole privilege ladder (users → staff/departments/branches → admins → super-admin), identity and authentication, authorization model, multi-tenancy, audit, privacy/compliance and operations — then produce a cited stack recommendation (primary + alternative + switch condition for up to 18 decisions), a contradiction check, a schema checklist and a tested PostgreSQL reference schema. Use whenever someone is starting a new backend or app, designing or reviewing a database/schema/data model/ERD, choosing between PostgreSQL, MySQL, SQLite or MongoDB or asking "what database should I use", setting up users/roles/permissions/RBAC/multi-tenant isolation/audit logging/consent, or asking how admins, staff, departments and branches should be modelled — even without the words "requirements" or "questionnaire", and even when a stack is already chosen and they just want a schema.
+license: MIT
+metadata:
+  version: 1.0.0
+  evidence_current: 2026-08-18
+  requires: Node.js 18+ (scripts). PostgreSQL 16+ optional, for running the schema tests.
 ---
 
 # Database design discovery
@@ -23,8 +28,6 @@ The core of it is a deterministic rule engine: a question bank (113 questions, 8
 ```
 
 Run the scripts from the skill directory (or give absolute paths). They are plain Node, no dependencies, no network.
-
-If this file was installed on its own — no `scripts/`, `references/` or `assets/` beside it — fetch the bundled folder first: the `database-design-discovery.skill` package or the `db-design-discovery` repository (`skills/database-design-discovery/`). Without the engine you can still run the interview from `references/question-bank.md` and apply `references/decision-rules.md` and `references/conflict-rules.md` by hand, but say so in the brief; the scripts exist precisely so that the recommendation is deterministic rather than recalled.
 
 ### 1. Choose a mode
 
