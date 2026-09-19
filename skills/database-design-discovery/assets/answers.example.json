@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "answers": {
+    "A1": "b2bsaas", "A2": ["custstaff", "ownstaff"], "A3": "shared", "A4": "reput", "A5": ["none"],
+    "B1": "small", "B2": "balanced", "B3": "p2", "B4": "secondary", "B5": "mostly", "B6": "region", "B7": "fts", "B8": "light", "B9": "rc", "B10": "no",
+    "C1": ["email"], "C2": "domain", "C3": "both", "C4": "ial1", "C5": "both", "C6": "roles", "C7": ["none"], "C8": ["nameonly"], "C9": "no",
+    "D1": "aal2", "D2": "aal2p", "D3": ["pw", "pksync", "totp"], "D4": "second", "D5": "day", "D6": "30m", "D7": "list", "D8": ["perm", "contact"], "D9": "med",
+    "E1": ["chgemail", "chgpw", "mfa", "sessions", "export", "delete", "consent"], "E2": ["email"], "E3": "org", "E4": "token", "E5": "nested", "E6": "seat", "E7": "no",
+    "F1": ["dept", "team"], "F2": "fixed", "F3": "hist", "F4": "many", "F5": "no", "F6": "flat",
+    "G1": "r2", "G2": "manual", "G3": "own", "G4": "no", "G5": ["none"], "G6": "no", "G9": "date",
+    "H1": "delta", "H2": "subset", "H3": "break", "H4": "readonly", "H5": ["grant"], "H6": "periodic", "H7": ["users", "access", "activity"], "H8": "yes",
+    "I1": ["role", "unit", "rel"], "I2": "list", "I3": "nested", "I4": "no", "I5": "ms50", "I6": "both",
+    "J1": ["gdpr", "soc2"], "J2": "purpose", "J3": "anon", "J4": "contract", "J5": "y6", "J7": "partly", "J8": "few",
+    "K1": ["authn", "change", "perm", "admin"], "K2": "y1", "K3": "offbox", "K4": "routine",
+    "L1": "small", "L2": "managed", "L3": "aws", "L4": "a2", "L5": "r2", "L6": "ts", "L7": "mixed", "L8": "gen", "L9": "normal", "L10": "q", "L11": "buysso",
+    "X-B2B1": "x10", "X-B2B2": "guest", "X-B2B3": "__other"
+  },
+  "other": { "X-B2B3": "Export is self-service; deletion is manual with a signed certificate within 30 days (contract clause 14.2)." },
+  "notes": { "A3": "Confirmed with the CTO on 2026-09-01: shared schema now, dedicated for enterprise tier later." }
+}
